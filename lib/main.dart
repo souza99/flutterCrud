@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/view/form_product.dart';
 import 'package:flutter_application_1/view/lista_form.dart';
 import 'package:flutter_application_1/view/lista_form_user.dart';
+import 'package:flutter_application_1/view/lista_produto.dart';
 import 'package:flutter_application_1/view/lista_tarefa.dart';
 import 'package:flutter_application_1/view/lista_usuario.dart';
 
@@ -29,9 +31,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       routes: {
-        "/": (context) => ListaUsuario(),
+        "/": (context) => ListaProduto(),
         "/formTarefa": (context) => ListaForm(),
-        "/formUsuarios": (context) => ListaFormUser()
+        "/formUsuarios": (context) => ListaFormUser(),
+        "/listUser": (context) => ListaUsuario(),
+        "/cadastroProduto":(context) => FormProduct()
       },
     );
   }
